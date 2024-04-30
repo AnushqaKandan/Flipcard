@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+
+.creation{
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    margin: 20px auto;
+    background-color: rgb(215, 29, 178);
+    position: relative;
+    border: 1px solid;
+    border-radius: 4px;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+img[alt="Anushqa"] {
+    aspect-ratio: 1/1;
+    width: 300px;
+}
+
+.first, .second {
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+}
+
+.first{
+    aspect-ratio: 1/1;
+    background-image: linear-gradient(to right, rgb(215, 29, 178));
+    color: black;
+}
+
+.second {
+    z-index: -1;
+   
+}
+
+.creation:hover .first{
+    transform: translateY(-180px);
+    opacity: 0;
+}
