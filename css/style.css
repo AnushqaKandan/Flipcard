@@ -13,7 +13,6 @@ body {
     width: 300px;
     aspect-ratio: 1 / 1;
     margin: 20px auto;
-    background-color: rgb(215, 29, 178);
     position: relative;
     border: 1px solid;
     border-radius: 4px;
@@ -35,8 +34,10 @@ img[alt="Anushqa"] {
 
 .first{
     aspect-ratio: 1/1;
-    background-image: linear-gradient(to right, rgb(215, 29, 178));
-    color: black;
+    background-image: rgb(215, 29, 178);
+    color:aquamarine;
+    position: relative;
+    top:180px;
 }
 
 .second {
